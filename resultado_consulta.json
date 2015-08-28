@@ -1,0 +1,63 @@
+[
+	{
+		"id_modalidad": "1",
+		"descripcion_modalidad": "MEDICINA",
+		"id_sede": "1",
+		"abreviatura_sede": "FCMA",
+		"id_consultorio": "1",
+		"nombre_consultorio": "consultorio 1",
+		"id_profesional": "1",
+		"documento_persona": "1000000000",
+		"nombre_persona": "Neify Nathalya"
+	}, {
+		"id_modalidad": "1",
+		"descripcion_modalidad": "MEDICINA",
+		"id_sede": "4",
+		"abreviatura_sede": "FCMB",
+		"id_consultorio": "3",
+		"nombre_consultorio": "consultorio 1",
+		"id_profesional": "1",
+		"documento_persona": "1000000000",
+		"nombre_persona": "Neify Nathalya"
+	}, {
+		"id_modalidad": "2",
+		"descripcion_modalidad": "ODONTOLOGÍA",
+		"id_sede": "1",
+		"abreviatura_sede": "FCMA",
+		"id_consultorio": "1",
+		"nombre_consultorio": "consultorio 1",
+		"id_profesional": "1",
+		"documento_persona": "1000000000",
+		"nombre_persona": "Neify Nathalya"
+	}, {
+		"id_modalidad": "2",
+		"descripcion_modalidad": "ODONTOLOGÍA",
+		"id_sede": "2",
+		"abreviatura_sede": "FMVI",
+		"id_consultorio": "2",
+		"nombre_consultorio": "consultorio 2",
+		"id_profesional": "2",
+		"documento_persona": "E01010101",
+		"nombre_persona": "Karen Mariana"
+	}, {
+		"id_modalidad": "2",
+		"descripcion_modalidad": "ODONTOLOGÍA",
+		"id_sede": "4",
+		"abreviatura_sede": "FCMB",
+		"id_consultorio": "3",
+		"nombre_consultorio": "consultorio 1",
+		"id_profesional": "1",
+		"documento_persona": "1000000000",
+		"nombre_persona": "Neify Nathalya"
+	}, {
+		"id_modalidad": "2",
+		"descripcion_modalidad": "ODONTOLOGÍA",
+		"id_sede": "4",
+		"abreviatura_sede": "FCMB",
+		"id_consultorio": "3",
+		"nombre_consultorio": "consultorio 1",
+		"id_profesional": "2",
+		"documento_persona": "E01010101",
+		"nombre_persona": "Karen Mariana"
+	}
+]
