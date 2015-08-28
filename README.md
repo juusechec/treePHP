@@ -1,6 +1,7 @@
 # treePHP
 Estructura de árbol en PHP para convertir las filas de la consulta SQL en una archivo JSON con jerarquía de árbol.
 
+De las filas de consulta SQL:
 
 | id_modalidad | descripcion_modalidad | id_sede | abreviatura_sede | id_profesional | documento_persona | nombre_persona |
 |---|-------------|---|---------------|---|------------|----------------|
