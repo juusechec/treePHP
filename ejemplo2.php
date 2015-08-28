@@ -13,10 +13,10 @@ require 'tree.php';
  * Esta función construye los atributos de la jerarquía JSON haciendo foreach a los niveles del árbol.
  * Esta función no es dinámica, por tanto hay que saber el número de niveles y los campos que trae la consulta SQL.
  */
-function crearArregloPorNiveles($arbol,$resultado,$idNiveles){
+function crearArregloPorNiveles($arbol,$filas,$idNiveles){
     $response = array();
     foreach ($arbol as $nivel1 => $valnivel1) {
-        $fila = array_findUnique($resultado, function($k) use ($idNiveles,$nivel1) {
+        $fila = array_findUnique($filas, function($k) use ($idNiveles,$nivel1) {
             return $k[$idNiveles[0]] == $nivel1;
         });
         array_push($response, array (
@@ -25,7 +25,7 @@ function crearArregloPorNiveles($arbol,$resultado,$idNiveles){
                 'sedes' => array()
         ));
         foreach ($valnivel1 as $nivel2 => $valnivel2) {
-            $fila = array_findUnique($resultado, function($k) use ($idNiveles,$nivel1,$nivel2) {
+            $fila = array_findUnique($filas, function($k) use ($idNiveles,$nivel1,$nivel2) {
                 return ($k[$idNiveles[0]] == $nivel1 && $k[$idNiveles[1]] == $nivel2);
             });
             array_push($response[count($response)-1]['sedes'], array (
@@ -35,7 +35,7 @@ function crearArregloPorNiveles($arbol,$resultado,$idNiveles){
                     'profesionales' => array()
             ));
             foreach ($valnivel2 as $nivel3 => $valnivel3) {
-                $fila = array_findUnique($resultado, function($k) use ($idNiveles,$nivel1,$nivel2,$nivel3) {
+                $fila = array_findUnique($filas, function($k) use ($idNiveles,$nivel1,$nivel2,$nivel3) {
                     return ($k[$idNiveles[0]] == $nivel1 && $k[$idNiveles[1]] == $nivel2 && $k[$idNiveles[2]] == $nivel3);
                 });
                 array_push($response[count($response)-1]['sedes'][count($response[count($response)-1]['sedes'])-1]['consultorios'], array (
