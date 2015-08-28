@@ -2,8 +2,9 @@
 Estructura de árbol en PHP para convertir las filas de la consulta SQL en una archivo JSON con jerarquía de árbol.
 
 
-| 1 | Medicina    | 1 | Consultorio 1 | 1 | 1000000000 | Neify Nathalya |
+| id_modalidad | descripcion_modalidad | id_sede | abreviatura_sede | id_profesional | documento_persona | nombre_persona |
 |---|-------------|---|---------------|---|------------|----------------|
+| 1 | Medicina    | 1 | Consultorio 1 | 1 | 1000000000 | Neify Nathalya |
 | 1 | Medicina    | 4 | Consultorio 1 | 1 | 1000000000 | Neify Nathalya |
 | 2 | Odontología | 1 | Consultorio 1 | 1 | 1000000000 | Neify Nathalya |
 | 2 | Odontología | 2 | Consultorio 2 | 2 | E01010101  | Karen Mariana  |
@@ -55,7 +56,7 @@ A un JSON:
     },
     {
         "tipo_cita": "2",
-        "nombre_cita": "ODONTOLOG\u00cdA",
+        "nombre_cita": "ODONTOLOGÍA",
         "sedes": [
             {
                 "id_sede": "1",
